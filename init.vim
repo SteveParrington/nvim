@@ -9,7 +9,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'ycm-core/YouCompleteMe'
 Plug 'preservim/nerdtree'
 Plug 'mileszs/ack.vim'
 
@@ -18,9 +17,12 @@ Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
 Plug 'sjl/badwolf'
 
-" Language Specific
+" Language/Framework Specific
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
 
 call plug#end()
 
@@ -44,6 +46,11 @@ set cursorline
 
 if (has("termguicolors"))
  set termguicolors
+endif
+
+if executable('ag')
+  let g:ctrlp_user_command = 'ag -l --nocolor -g "" %s'
+  let g:ctrlp_use_caching = 0
 endif
 
 "-------------------------------------------------------------------------------
