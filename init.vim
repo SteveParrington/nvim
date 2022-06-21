@@ -11,6 +11,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'preservim/nerdtree'
 Plug 'mileszs/ack.vim'
+Plug 'ervandew/supertab'
 
 " Aesthetic
 Plug 'itchyny/lightline.vim'
