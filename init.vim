@@ -42,7 +42,7 @@ let g:ackprg = 'ag --vimgrep'
 "-------------------------------------------------------------------------------
 colorscheme tender
 let g:lightline = { 'colorscheme': 'tender' }
-set colorcolumn=81
+set colorcolumn=101
 set cursorline
 
 if (has("termguicolors"))
